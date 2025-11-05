@@ -12,5 +12,6 @@ RUN chmod +x JSON.sh && \
     wget -O github-release-notes-generator.jar https://github.com/spring-io/github-changelog-generator/releases/download/${RELEASE_NOTE_GENERATOR_VERSION}/github-changelog-generator.jar
     
 COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["bash", "/entrypoint.sh"]
