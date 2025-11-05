@@ -1,4 +1,4 @@
-FROM openjdk:26-ea-trixie
+FROM eclipse-temurin:8
 LABEL "maintainer"="Decathlon <developers@decathlon.com>"
 LABEL "com.github.actions.name"="release-notes-generator-action"
 LABEL "com.github.actions.description"="Create a release notes of milestone"
